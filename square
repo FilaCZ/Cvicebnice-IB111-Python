@@ -1,0 +1,9 @@
+from turtle import Turtle
+julie = Turtle()
+
+def square(side):
+    for i in range(4):
+        julie.forward(side)
+        julie.left(90)
+
+square(100)
