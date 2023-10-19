@@ -1,0 +1,26 @@
+from turtle import Turtle   # import tridy Turtle pro zelvi grafiku
+julie = Turtle()            # vytvoreni nove zelvy jmenem julie
+
+def centipede(n):
+    julie.left(45)
+    for i in range(4):
+             julie.forward(50)
+             julie.left(90)
+    julie.forward(50)
+    julie.right(45)
+    julie.forward(15)
+
+    for i in range(n):
+        julie.right(120)
+        julie.forward(50)
+        julie.right(180)
+        julie.forward(50)
+        julie.right(120)
+        julie.forward(50)
+        julie.right(180)
+        julie.forward(50)
+        julie.right(120)
+        julie.forward(60)   
+    
+        
+centipede(3)
