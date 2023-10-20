@@ -1,0 +1,24 @@
+from turtle import Turtle
+julie = Turtle()
+
+def polygon(n, side):
+    if n==3:
+        for i in  range(n):
+            julie.forward(side)
+            julie.left(120)
+    elif n==4: 
+        for i in  range(n):
+            julie.forward(side)
+            julie.left(90)
+    elif n==5: 
+        for i in  range(n):
+            julie.forward(side)
+            julie.left(72)
+    elif n==6: 
+        for i in  range(n):
+            julie.forward(side)
+            julie.left(60)
+    else: print("Not this one mate, choose n value from 3 to 6")
+
+
+polygon(6, 90)
